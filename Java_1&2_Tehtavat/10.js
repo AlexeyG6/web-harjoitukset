@@ -1,14 +1,17 @@
-const noppa_maara = prompt("Kuinka monta noppaa heitetään?");
-const silm_luku_summ = prompt("Mistä silmäluku summasta olet kiinnostunut?");
-let prosentti = 0;
+const noppa_maara = parseInt(prompt("Kuinka monta noppaa heitetään?"));
+const silm_luku_summ = parseInt(prompt("Mistä silmäluku summasta olet kiinnostunut?"));
+let monta = 0;
 
-for (let i = 0; i < 10000; i++) {
+for (let i = 0; i < 20000; i++) {
+    console.log("1 silmukka")
     let luku = 0;
-    for(let o = 0; o < noppa_maara;){
-        luku += Math.floor(Math.random() * 7);
+    for(let o = 0; o < noppa_maara; o++){
+        console.log("2 silmukka")
+        luku += Math.floor(Math.random() * 6) + 1;
     }
     if (luku === silm_luku_summ){
-        prosentti++;
+        monta++;
     }
 }
-console.log(prosentti % 10000)
+const todenakoisyys = (monta / 20000) * 100; 
+document.querySelector("#print").innerHTML = "Todennäköysyys saada summa " + "nopalla on " + todenakoisyys.toFixed(2) + "%"
