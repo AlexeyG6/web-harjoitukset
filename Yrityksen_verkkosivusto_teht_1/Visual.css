@@ -5,7 +5,7 @@ body{
 }
 
 h1{
-    margin-top: 200px;
+    margin-top: 150px;
     text-align: center;
     color:#19242d;
     font-size: 4rem;
@@ -27,20 +27,23 @@ h1{
     gap: 10px;
     bottom: 20px;
     text-align: center;
-    margin-left: 75%;
+    margin-left: 67%;
 }
 .logo{
     align-self: flex-start;
 }
 .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
     background-color: #c1d2de;
     width: 120px;
-    height: 80%;
-    
+    height: 80%;    
 }
 .button:hover{
     background-color: #6d8598;
+    border-radius: 5px;
 }
 .button:visited a{
     color: white;
@@ -55,20 +58,22 @@ a{
     display: flex;
     justify-content: center;
 }
+img{
+    object-fit: cover;
+}
 p{
     text-align: center;
     font-size: 1.5rem;
     color: #19242d;
 }
-.Products{
+.products{
     display: flex;
     justify-content: center;
     gap: 40px;
-    width: 350px;
     height: 550px;
 }
 .product-img{
     width: 300px;
     height: 500px;
-    object-fit: cover;
+    border-radius: 6px;
 }
