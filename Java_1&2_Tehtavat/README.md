@@ -4,7 +4,7 @@
 
 ### JS-moduulit 1 ja 2
 
-[Linkki kansioon users.metropolia.fi-palvelussa](https://webdisk.metropolia.fi/htcomnet/Default.aspx)
+[Linkki kansioon users.metropolia.fi-palvelussa](https://users.metropolia.fi/~alexeygl/)
 
 Tehdyt tehtävät:
 
