@@ -9,7 +9,7 @@ h1{
     text-align: center;
     color:#19242d;
     font-size: 4rem;
-    text-shadow: 5px 6px #5c7183;
+    text-shadow: 3px 4px #5c7183;
     height: 100px;
     width: 100%;
 }
@@ -124,6 +124,7 @@ p{
     text-shadow: 5px 6px #5c7183;
     height: 100px;
     width: 100%;
+    font-family: vernada;
 }
 .map-wrapper iframe {
     width: 100%;
