@@ -15,9 +15,17 @@ for (let i = 0; i < äänestäjiä; i++) {
         ehdokkaaat[ääni - 1].votes++;
     }
 }
+let voittaja = [];
 ehdokkaaat.sort((a, b) => {
-    return b.votes - a.votes;
+    if (a.votes > b.votes) {
+        voittaja = [a.name, a.votes];
+    }
+    else if (a.votes < b.votes) {
+        voittaja = [b.name, b.votes];
+    }
 });
+
+console.log("Voittaja on: " + voittaja[0] + " with " + voittaja[1] + " ääntä)");
 for (let i = 0; i < ehdokkaaat.length; i++) {
     console.log("Tuolkset")
     console.log(ehdokkaaat[i].name + ": " + ehdokkaaat[i].votes + " ääntä");
