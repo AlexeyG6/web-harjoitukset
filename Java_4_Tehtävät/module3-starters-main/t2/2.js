@@ -1,0 +1,10 @@
+const ul = document.querySelector('#target');
+const one = document.createElement('li');
+const two = document.createElement('li');
+const three = document.createElement('li');
+one.appendChild(document.createTextNode('First Item'));
+two.appendChild(document.createTextNode('Second Item'));
+three.appendChild(document.createTextNode('Third Item'));
+ul.appendChild(one);
+ul.appendChild(two);
+ul.appendChild(three);
